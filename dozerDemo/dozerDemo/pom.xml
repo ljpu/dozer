@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.example</groupId>
+	<artifactId>dozerDemo</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<dependencies>
+		<dependency>
+			<groupId>net.sf.dozer</groupId>
+			<artifactId>dozer</artifactId>
+			<version>5.5.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>4.2.2.RELEASE</version>
+		</dependency>
+		
+	<!-- This is to fix SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder". 
+	     when running Demo and DemoWithDozerBeanMapper
+	   Failed to transfer file http://kube.navone.ca/nexus/repository/maven-group/org/slf4j/slf4j-simple/1.7.29/slf4j-simple-1.7.29.pom 
+	   http://kube.navone.ca is the gateway where all the files request by maven are passed through
+	   
+	   https://www.mkyong.com/logging/slf4j-logback-tutorial/  	   	
+	-->
+	<dependency>
+		<groupId>ch.qos.logback</groupId>
+		<artifactId>logback-classic</artifactId>
+		<version>1.2.3</version>
+	</dependency>
+	</dependencies>
+</project>
